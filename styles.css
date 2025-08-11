@@ -50,11 +50,31 @@ body::after { content: none; }
 .brand:hover .brand-text::after { transform: scaleX(1); }
 
 .nav { display: flex; align-items: center; gap: 10px; }
-.nav a { color: var(--muted); text-decoration: none; font-weight: 600; padding: 8px 10px; border-radius: 8px; transition: color .15s ease, background .15s ease; }
+.nav a { 
+  color: var(--muted); 
+  text-decoration: none; 
+  font-weight: 600; 
+  padding: 8px 10px; 
+  border-radius: 8px; 
+  transition: color .15s ease, background .15s ease; 
+}
 .nav a:hover { color: var(--text); background: #f3f3f6; }
+.nav .btn-primary { color: #ffffff; } /* Add white text for primary button in nav */
+.nav .btn-primary:hover { color: #ffffff; } /* Keep white text on hover */
 
-.btn { appearance: none; border: 1px solid transparent; cursor: pointer; padding: 10px 14px; border-radius: 10px; font-weight: 800; letter-spacing: .2px; }
-.btn-primary { background: var(--primary); color: #ffffff; }
+.btn { 
+  appearance: none; 
+  border: 1px solid transparent; 
+  cursor: pointer; 
+  padding: 10px 14px; 
+  border-radius: 10px; 
+  font-weight: 800; 
+  letter-spacing: .2px;
+}
+.btn-primary { 
+  background: var(--primary); 
+  color: #ffffff; /* Ensure white text */
+}
 .btn-primary:hover { filter: brightness(0.9); }
 .btn-secondary { background: #ffffff; border: 1px solid var(--border); color: var(--text); }
 .btn-secondary:hover { background: #f7f7fa; }
@@ -72,9 +92,21 @@ body::after { content: none; }
 .headline-role { display: block; font-family: Inter, system-ui; font-weight: 700; color: #fff; opacity: .9; font-size: clamp(24px, 4.5vw, 48px); margin-top: 10px; }
 .tagline { color: rgba(255,255,255,.75); font-size: clamp(16px, 2.2vw, 20px); margin: 16px auto 22px; max-width: 800px; }
 .cta-group { display: inline-flex; gap: 12px; justify-content: center; }
-.hero .btn-primary { background: #fff; color: #000; }
-.hero .btn-secondary { background: transparent; color: #fff; border-color: rgba(255,255,255,.25); }
-.hero .btn-secondary:hover { background: rgba(255,255,255,.06); }
+.hero .btn-primary { 
+  background: #fff; 
+  color: #000; /* Keep black text on white button in hero */
+  text-decoration: none; /* Remove underline */
+}
+.hero .btn-secondary { 
+  background: transparent; 
+  color: #fff; 
+  border-color: rgba(255,255,255,.25); 
+  text-decoration: none; /* Remove underline */
+}
+.hero .btn-primary:hover,
+.hero .btn-secondary:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
 
 /* social icons in hero */
 .social-icons { display: inline-flex; gap: 14px; align-items: center; margin-right: 8px; }
