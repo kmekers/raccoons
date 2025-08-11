@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV — AI Strategist & Analyst</title>
+    <meta name="description" content="Moderne onepager voor sollicitaties: AI Strategist & Analyst. Ervaring in FOD Financiën, community building, POCs, opleidingen en advies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Ga naar start">
+          <span class="brand-text">Koen Mekers</span>
+        </a>
+        <nav class="nav" aria-label="Hoofdnavigatie">
+          <a href="#about">Over</a>
+          <a href="#experience">Ervaring</a>
+          <a href="#education">Opleiding</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <!-- Change print buttons to download links -->
+          <a href="CV_Koen_Mekers.pdf" 
+             download="CV_Koen_Mekers.pdf" 
+             class="btn btn-primary" 
+             aria-label="Download CV als PDF">
+             Download CV
+          </a>
+        </nav>
+      </div>
+      <div class="header-ornaments" aria-hidden="true">
+        <canvas id="header-canvas" class="header-canvas"></canvas>
+        <span class="aurora"></span>
+        <div class="rings" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="grid-overlay"></span>
+      </div>
+    </header>
+
+    <main id="home" class="main">
+      <section class="hero" aria-label="Intro">
+        <div class="hero-content">
+          <h1 class="headline reveal" data-reveal>
+            <span class="headline-kicker">Hallo, ik ben Koen Mekers</span>
+            <span class="headline-name">AI Strategist & Analyst</span>
+          </h1>
+          <p class="tagline reveal" data-reveal>
+            Coördineer AI POCs, bouw communities en versnel verantwoorde AI-adoptie in de publieke sector.
+          </p>
+          <div class="cta-group reveal" data-reveal>
+            <div class="social-icons" aria-label="Social links">
+              <a class="social" href="https://www.youtube.com/@Koenmekers" target="_blank" rel="noopener" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.3 41.3 0 0 0 0 12c0 1.9.2 3.8.5 5.8a4 4 0 0 0 2.8 2.8C5.1 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8c.3-2 .5-4 .5-5.8 0-1.9-.2-3.8-.5-5.8ZM9.8 15.5V8.5l6.2 3.5-6.2 3.5Z"/></svg>
+              </a>
+              <a class="social" href="https://www.linkedin.com/in/koen-mekers-a350b018a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.5h4.9v15H.5v-15Zm7.9 0h4.7v2.1h.1c.7-1.3 2.3-2.7 4.7-2.7 5 0 5.9 3.3 5.9 7.6v8h-4.9v-7.1c0-1.7 0-3.8-2.3-3.8s-2.6 1.8-2.6 3.7V23.5H8.4v-15Z"/></svg>
+              </a>
+              <a class="social" href="https://github.com/kmekers" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.4.8-4.1-1.6-4.1-1.6-.5-1.4-1.2-1.8-1.2-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 2 .7 2 1 .1 2.1-.7 2.1-.7.1-.8.5-1.3.9-1.6-2.7-.3-5.6-1.3-5.6-6a4.6 4.6 0 0 1 1.2-3.1c-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.9 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.9.1 3.2a4.6 4.6 0 0 1 1.2 3.1c0 4.8-2.9 5.7-5.6 6 .5.4 1 .1 1.6 1.4v3.2c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+              </a>
+            </div>
+            <a href="CV_Koen_Mekers.pdf" download="CV_Koen_Mekers.pdf" class="btn btn-primary" aria-label="Download CV als PDF">Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container" aria-label="Over mij">
+        <h2 class="section-title reveal" data-reveal>Over</h2>
+        <p class="lead reveal" data-reveal>
+          Ik ben momenteel AI strateeg met achtergrond in functionele & AI analyse, onderwijs en community building. Ik vertaal complexe AI-mogelijkheden naar concrete meerwaarde en duurzame implementaties. Sterk in coördinatie, communicatie en pragmatische delivery.
+        </p>
+        <p class="lead reveal" data-reveal>
+          Recent ben ik afgestudeerd als AI Business Architect. In mijn vrije tijd maak ik content op LinkedIn en YouTube. 
+        </p>
+      </section>
+
+      <section id="cv" class="section container" aria-label="CV kern">
+        <h2 class="section-title reveal" data-reveal>CV</h2>
+
+        <div id="experience" class="subsection" aria-label="Werkervaring">
+          <h3 class="subsection-title reveal" data-reveal>Ervaring</h3>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Ai strategist</h4>
+              <div class="meta">FOD Financiën — SCC (Diensten van de Voorzitter) · Brussels · Juni 2025 – heden</div>
+            </header>
+            <ul class="card-list">
+              <li>Coördinatie van AI Proof of Concept-trajecten over departementen heen</li>
+              <li>Advies aan AI screening- en richtingcomité over alignment en haalbaarheid</li>
+              <li>Interne AI-geletterdheid verhogen met opleidingen en verantwoord gebruik</li>
+              <li>Faciliteren van alignments met het intern AI team voor kennisdeling en voortgang</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>AI Analyst</h4>
+              <div class="meta">Egov Select · Full-time · Brussels · Aug 2024 – Juni 2025</div>
+            </header>
+            <ul class="card-list">
+              <li>Analyseren en testen van AI POCs binnen Fiscaliteit, maken van mock ups, prototypes,schrijven van use-cases en stories</li>
+              <li>Leiden en laten groeien van de AI-community bij FOD Financiën</li>
+              <li>Bijdrage aan Copilot 365 testgroep, opleidingen en kennisdeling</li>
+            </ul>
+            <div class="tags">Vereisten verzamelen · Kritisch denken · analyse · Communicatie</div>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Junior Functional Analyst & AI Analyst</h4>
+              <div class="meta">Egov Select · Brussels · May 2022 – Aug 2024</div>
+            </header>
+            <ul class="card-list">
+              <li>MyMinfin-tool: pre-registratie percelen, scrum-ceremonies, testing</li>
+              <li> Part-time AI-team mee uitgebouwd: POCs/MVPs, documentatie, user stories</li>
+              <li>Eerste federale AI in productie: Grief Classification</li>
+              <li>AI-community opgezet voor brede adoptie</li>
+            </ul>
+            <div class="tags">Agile · Jira · Confluence · REST · Swagger · M365</div>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Owner — Virtual Villains</h4>
+              <div class="meta">Zelfstandig · Jan 2023 – Apr 2025</div>
+            </header>
+            <p>AI-talks, workshops en begeleiding voor bedrijven, scholen en organisaties. Nederlandstalige content op YouTube.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Drugspreventie / Workshopgever — Drugstories</h4>
+              <div class="meta">Zelfstandig · Oct 2022 – Apr 2025 · Belgium</div>
+            </header>
+            <p>Workshops in scholen/bedrijven/VZW's over preventie en weerbaarheid.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Coördinator — Responsible Young Drivers Vlaanderen</h4>
+              <div class="meta">Aug 2021 – Apr 2022</div>
+            </header>
+            <p>Lesgeven en IT-infrabeheer, coaching van vrijwilligers.</p>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Pedagogisch medewerker — Hujo</h4>
+              <div class="meta">Apr 2017 – Jun 2020 · Brussel</div>
+            </header>
+            <ul class="card-list">
+              <li>Organisatie Filopubs (spreker-/debatavonden)</li>
+              <li>Project 'Sesam Open' IT voor kansarme jongeren</li>
+              <li>Coördinatie debatwedstrijd en scholenwerking</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Leerkracht — GO! Gemeenschapsonderwijs</h4>
+              <div class="meta">Sep 2015 – Apr 2017 · Hasselt</div>
+            </header>
+          </article>
+        </div>
+
+        <div id="education" class="subsection" aria-label="Opleidingen">
+          <h3 class="subsection-title reveal" data-reveal>Opleidingen</h3>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Hogeschool PXL — Postgraduate Business Architect AI</h4>
+              <div class="meta">Sep 2024 – Jun 2025</div>
+            </header>
+            <ul class="card-list">
+              <li>AI Fundamentals I: 17/20</li>
+              <li>AI Tools for Business: 16/20</li>
+              <li>Case: 16/20</li>
+            </ul>
+            <div class="tags">
+              Case Vlaamse Codex met agent, jupyter notebook, prototype: 
+              <a class="link-out" href="https://github.com/kmekers/Case-Vlaamse-codex--PXL---Vlaanderen" target="_blank" rel="noopener">GitHub (agent, mockups, prototype)</a>
+              ·
+              <a class="link-out" href="https://kmekers.github.io/" target="_blank" rel="noopener">Live prototype</a>
+              ·
+              <a class="link-out" href="https://www.linkedin.com/in/koen-mekers-a350b018a/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Switchfully — Functional Analyst Track</h4>
+              <div class="meta">2022</div>
+            </header>
+            <div class="tags">Analytisch denkvermogen</div>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>CVO de verdieping — Front-end development</h4>
+              <div class="meta">2020</div>
+            </header>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Hogeschool PXL — Bachelor Secundair onderwijs</h4>
+              <div class="meta">2010 – 2014 · Cum Laude</div>
+            </header>
+          </article>
+
+          <article class="card reveal" data-reveal>
+            <header class="card-header">
+              <h4>Vrije Universiteit Brussel — Bachelor Geschiedenis</h4>
+              <div class="meta">Sep 2008 – Jun 2010</div>
+            </header>
+          </article>
+        </div>
+
+        <div id="skills" class="subsection" aria-label="Vaardigheden">
+          <h3 class="subsection-title reveal" data-reveal>Skills</h3>
+          <ul class="skill-chips reveal" data-reveal>
+            <li>AI-strategie</li>
+            <li>POC coördinatie</li>
+            <li>Business analyse</li>
+            <li>Requirements</li>
+            <li>Agile & Scrum</li>
+            <li>Story writing</li>
+            <li>Stakeholder management</li>
+            <li>Presentaties & Training</li>
+            <li>Microsoft 365 / Copilot</li>
+            <li>REST / Swagger</li>
+            <li>Communicatie</li>
+            <li>Kritisch denken</li>
+            <li>AI-tools</li>
+            <li>mockups</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section container" aria-label="Contact">
+        <h2 class="section-title reveal" data-reveal>Contact</h2>
+        <div class="contact-grid reveal" data-reveal>
+          <a class="contact-card" href="mailto:koenmekers@outlook.com" aria-label="E-mail">
+            <span class="icon" aria-hidden="true">✉️</span>
+            <span>E-mail</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/koen-mekers-a350b018a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <span class="icon" aria-hidden="true">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="CV_Koen_Mekers.pdf" download="CV_Koen_Mekers.pdf" class="contact-card" aria-label="Download CV als PDF">
+            <span class="icon" aria-hidden="true">📄</span>
+            <span>Download CV</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> — Koen Mekers</small>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+
